@@ -1,9 +1,9 @@
 # TalyaTcpToHttp
-1. Install NodeJS
+1. Install NodeJS -->
 apt install nodejs
-2. Install npm
+2. Install npm -->
 apt install npm 
-2. Install pm2
+2. Install pm2 --> 
 npm install pm2 -g
 3. Download this repo(app.js) in your machine and navigate to the directory in your machine.
 4. Start related service to your needs
@@ -21,3 +21,9 @@ pm2 start app.js -o /dev/null -e /dev/null --name Philips --max-memory-restart 2
 * CX: Whether to send LS message to the connecting client
 * PORT: On which TCP port to listen on
 * AUTH: Authorization header Bearer token (optional)
+
+# Restart
+```
+pm2 kill 
+pm2 ....
+```
